@@ -20,6 +20,8 @@ test "labeled break from labeled block expression" {
 
 ### Tests
 
+Tests can be inline with application/library code.
+
 #### Testing Allocator
 
 ```zig
@@ -40,7 +42,7 @@ never freed.
 ### Error Union Types
 
 `Error!u64` is an explicit error-union type. `!void` is implicit--the compiler
-will determine the error type.
+will infer the error type.
 
 ```zig
 const std = @import("std");
